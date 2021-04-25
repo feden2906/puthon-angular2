@@ -28,6 +28,6 @@ export class AppComponent implements OnInit{
   }
 
   save(form: FormGroup): void {
-    this.officeService.create(form.getRawValue().subscribe(() => this.ngOnInit()));
+    this.officeService.create(form.getRawValue()).subscribe(() => this.ngOnInit());
   }
 }
